@@ -1,0 +1,9 @@
+Enemy_Type,Enemy_HP,Enemy_Score,Enemy_Speed,Enemy_Bullet_Speed,Enemy_Bullet_Interval,Enemy_Size,Enemy_Model,Enemy_Texture
+Nomal,3,100,10,2,,100,AlienDestroyer001.mv1,EnemyDestroyer/AlienDestroyer.png
+Speed,3,150,20,1.8,,100,AlienDestroyer001.mv1,EnemyDestroyer/AlienDestroyerGreen.png
+Power,5,200,10,2.5,,100,AlienDestroyer001.mv1,EnemyDestroyer/AlienDestroyerWhite.png
+Nomal,3,100,10,2,,100,,EnemyBio/BioGreen.png
+Speed,2,150,20,1.8,,100,,EnemyBio/BioWhite.png
+Power,5,200,10,2.5,,100,,EnemyFigther/Fighter.png
+Speed,2,150,20,1.8,,100,,EnemyFigther/FighterGreen.png
+Chase,1,50,15,0,0,100,,EnemyFigther/FighterWhite.png
