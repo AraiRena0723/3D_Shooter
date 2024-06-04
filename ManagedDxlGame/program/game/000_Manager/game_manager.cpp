@@ -35,8 +35,8 @@ void GameManager::ChangeScene(SceneBase* next_scene, float trans_time)
 
 void GameManager::Update(float delta_time)
 {
-	if (now_scene_) now_scene_->update(delta_time);
-	if (now_scene_) now_scene_->draw();
+	if (now_scene_) now_scene_->Update(delta_time);
+	if (now_scene_) now_scene_->Draw();
 
 	sequence.update(delta_time);
 }

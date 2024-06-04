@@ -11,10 +11,13 @@ public:
 	~Player();
 	void Update(float delta_time) override;
 	void Draw(Shared<dxe::Camera> camera) override;
+	void OnHit(Shared<Object> object) override;
 
 	//------------------------	Getter&Setter	----------------------------------//
 	tnl::Vector3 GetPlayerPos() { return pos_; }
-
+	tnl::Quaternion GetPlayerRot() { return rot_; }
+	bool GetBulletFlag() { return player_bullet_flg; }
+	void SetBulletFlag(bool bullet_flg_) { player_bullet_flg = bullet_flg_; }
 private:
 	//------------------------	ïœêî	----------------------------------//
 	tnl::Sequence<Player> sequence_ = tnl::Sequence<Player>(this, &Player::SeqIdle);
@@ -25,7 +28,7 @@ private:
 	float speed_ ;
 	float move_ ;
 	float move_rotation_ ;
-	int player_tupe;
+	bool player_bullet_flg;
 	//------------------------	ä÷êî	----------------------------------//
 
 	bool SeqIdle(const float delta_time);

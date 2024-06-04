@@ -13,17 +13,21 @@ struct RaderEnemy
 
 class Ui {
 public:
-	Ui();
+	Ui(std::weak_ptr<Player>player,std::weak_ptr<Enemy>enemy);
 	~Ui();
 
 	void UpDate(float delta_time);
 	void Draw(Shared<dxe::Camera>camera);
 
 private:
+	//------------------------	ŠÖ”	----------------------------------//
 	void DrawPlayerStatus();
 	void DrawEnemyStatus();
 	void DrawEnemyPos();
-
-	Shared<Player> player = nullptr;
-	Shared<Enemy> enemy = nullptr;
+	//------------------------	ƒ|ƒCƒ“ƒ^	----------------------------------//
+	std::weak_ptr<Player> player_ ;
+	std::weak_ptr<Enemy> enemy_ ;
+	//------------------------	•Ï”	----------------------------------//
+	int player_hp_hdl;
+	int enemy_hp_hdl;
 };

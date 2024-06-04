@@ -78,6 +78,9 @@
     <Filter Include="program\[003] game\Object\Stage">
       <UniqueIdentifier>{570fc42b-a532-40bc-a3b5-8e89cb91770c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="program\[003] game\Csv">
+      <UniqueIdentifier>{b8d3d493-957d-40e6-96d5-270568fc9e83}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ManagedDxlGame.cpp">
@@ -263,29 +266,29 @@
     <ClCompile Include="program\game\002_Camera\camera.cpp">
       <Filter>program\[003] game\Camera</Filter>
     </ClCompile>
-    <ClCompile Include="program\game\006_music\music_manager.cpp">
-      <Filter>program\[003] game\Music</Filter>
-    </ClCompile>
-    <ClCompile Include="program\game\006_music\music_se.cpp">
-      <Filter>program\[003] game\Music</Filter>
-    </ClCompile>
-    <ClCompile Include="program\game\006_music\music_bgm.cpp">
-      <Filter>program\[003] game\Music</Filter>
-    </ClCompile>
     <ClCompile Include="program\game\001_Scene\scene_end.cpp">
       <Filter>program\[003] game\Scene</Filter>
     </ClCompile>
     <ClCompile Include="program\game\003_Object\character\Character.cpp">
       <Filter>program\[003] game\Object\Character</Filter>
     </ClCompile>
-    <ClCompile Include="program\game\003_Object\ObjectManager.cpp">
-      <Filter>program\[003] game\Object</Filter>
-    </ClCompile>
     <ClCompile Include="program\game\004_Ui\ui.cpp">
       <Filter>program\[003] game\Ui</Filter>
     </ClCompile>
     <ClCompile Include="program\game\003_Object\Stage\stage.cpp">
       <Filter>program\[003] game\Object\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\006_Csvload\loadcsv.cpp">
+      <Filter>program\[003] game\Csv</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\005_music\MusicManager.cpp">
+      <Filter>program\[003] game\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\005_music\music_bgm.cpp">
+      <Filter>program\[003] game\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\005_music\music_se.cpp">
+      <Filter>program\[003] game\Music</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -536,29 +539,29 @@
     <ClInclude Include="program\game\001_Scene\scene_base.h">
       <Filter>program\[003] game\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="program\game\006_music\music_manager.h">
-      <Filter>program\[003] game\Music</Filter>
-    </ClInclude>
-    <ClInclude Include="program\game\006_music\music_se.h">
-      <Filter>program\[003] game\Music</Filter>
-    </ClInclude>
-    <ClInclude Include="program\game\006_music\music_bgm.h">
-      <Filter>program\[003] game\Music</Filter>
-    </ClInclude>
     <ClInclude Include="program\game\001_Scene\scene_end.h">
       <Filter>program\[003] game\Scene</Filter>
     </ClInclude>
     <ClInclude Include="program\game\003_Object\character\Character.h">
       <Filter>program\[003] game\Object\Character</Filter>
     </ClInclude>
-    <ClInclude Include="program\game\003_Object\ObjectManager.h">
-      <Filter>program\[003] game\Object</Filter>
-    </ClInclude>
     <ClInclude Include="program\game\004_Ui\ui.h">
       <Filter>program\[003] game\Ui</Filter>
     </ClInclude>
     <ClInclude Include="program\game\003_Object\Stage\stage.h">
       <Filter>program\[003] game\Object\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\006_Csvload\loadcsv.h">
+      <Filter>program\[003] game\Csv</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\005_music\MusicManager.h">
+      <Filter>program\[003] game\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\005_music\music_bgm.h">
+      <Filter>program\[003] game\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\005_music\music_se.h">
+      <Filter>program\[003] game\Music</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

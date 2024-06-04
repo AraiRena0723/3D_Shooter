@@ -68,7 +68,7 @@ void DrawHexagon(const tnl::Vector3 pos, float width, int color = -1);
 // arg3... グリッドを並べる個数 ( 偶数個で指定 )
 // arg4... 16進数カラー
 // tips... この関数を使用する前にカメラを生成して update 関数を実行してください
-void DrawGridGround( const Shared<dxe::Camera> camera, const float square_size, int row_num, int color = 0x99999999 );
+void DrawGridGround( const Shared<dxe::Camera> camera/*, const float square_size, int row_num, int color = 0x99999999*/ );
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------
 // 正六角形を敷き詰めた地面を描画

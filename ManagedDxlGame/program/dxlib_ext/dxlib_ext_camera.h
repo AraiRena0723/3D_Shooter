@@ -47,7 +47,7 @@ namespace dxe {
 		// ƒJƒƒ‰‚É‰f‚é”ÍˆÍ‚ÌÅ‹ß‹——£
 		float near_ = 1.0f;
 		// ƒJƒƒ‰‚É‰f‚é”ÍˆÍ‚ÌÅ‰“‹——£
-		float far_ = 50000.0f;
+		float far_ = 500000.0f;
 
 		tnl::Matrix view_;
 		tnl::Matrix proj_;

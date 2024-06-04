@@ -187,7 +187,7 @@ void DrawLine3DEx(const Shared<dxe::Camera> camera, const tnl::Vector3& st, cons
 
 
 //------------------------------------------------------------------------------------------------------------------------------
-void DrawGridGround(const Shared<dxe::Camera> camera, const float square_size, int row_num, int color) {
+void DrawGridGround(const Shared<dxe::Camera> camera/*, const float square_size, int row_num, int color*/) {
 
 	MATRIX view, proj;
 	memcpy(view.m, camera->view_.m, sizeof(float) * 16);
@@ -199,22 +199,22 @@ void DrawGridGround(const Shared<dxe::Camera> camera, const float square_size, i
 	CreateIdentityMatrix(&im);
 	SetTransformToWorld(&im);
 
-	row_num = (1 == row_num % 2) ? row_num + 1 : row_num;
+	//row_num = (1 == row_num % 2) ? row_num + 1 : row_num;
 
-	float l = square_size * row_num * 0.5f;
-	float n = -l;
-	for (int i = 0; i < row_num + 1; ++i) {
-		if ((row_num >> 1) == i) {
-			DrawLine3D({ n, 0, l }, { n, 0, -l }, 0xff0000ff);
-			DrawLine3D({ l, 0, n }, { -l, 0, n }, 0xffff0000);
-		}
-		else {
-			DrawLine3D({ n, 0, l }, { n, 0, -l }, color);
-			DrawLine3D({ l, 0, n }, { -l, 0, n }, color);
-		}
-		n += square_size;
-	}
-	DrawLine3D({ 0, l, 0 }, { 0, -l, 0 }, 0xff00ff00);
+	//float l = square_size * row_num * 0.5f;
+	//float n = -l;
+	//for (int i = 0; i < row_num + 1; ++i) {
+	//	if ((row_num >> 1) == i) {
+	//		DrawLine3D({ n, 0, l }, { n, 0, -l }, 0xff0000ff);
+	//		DrawLine3D({ l, 0, n }, { -l, 0, n }, 0xffff0000);
+	//	}
+	//	else {
+	//		DrawLine3D({ n, 0, l }, { n, 0, -l }, color);
+	//		DrawLine3D({ l, 0, n }, { -l, 0, n }, color);
+	//	}
+	//	n += square_size;
+	//}
+	//DrawLine3D({ 0, l, 0 }, { 0, -l, 0 }, 0xff00ff00);
 
 }
 

@@ -14,6 +14,12 @@ void PlayerCamera::update()
 	if (tnl::Input::IsKeyDown(eKeys::KB_RIGHT)) {
 		camera_rot *= tnl::Quaternion::RotationAxis({ 0,1,0 }, tnl::ToRadian(1));
 	}
+	if (tnl::Input::IsKeyDown(eKeys::KB_UP)) {
+		camera_rot *= tnl::Quaternion::RotationAxis(right(), tnl::ToRadian(1));
+	}
+	if (tnl::Input::IsKeyDown(eKeys::KB_DOWN)) {
+		camera_rot *= tnl::Quaternion::RotationAxis(right(), tnl::ToRadian(-1));
+	}
 	tnl::Vector3 fix_pos = target_ + tnl::Vector3::TransformCoord({ 0,0,-500 }, camera_rot);
 	pos_ += (fix_pos - pos_) * 0.1f;
 

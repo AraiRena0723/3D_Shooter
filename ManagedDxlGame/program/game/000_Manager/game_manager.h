@@ -11,7 +11,7 @@ public:
 
 private:
 	GameManager(SceneBase* start_scene);
-	float trans_time_;
+	float trans_time_ = 0.5f;
 	int transition_graph_hdl = 0;
 
 	SceneBase* now_scene_ = nullptr;

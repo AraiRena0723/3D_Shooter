@@ -1,12 +1,12 @@
 #pragma once
 
-class MusicBGM
-{
+class MusicBGM {
 public:
-	MusicBGM();
+	explicit MusicBGM(const std::string& path);
 	~MusicBGM();
 
+	void Play();
+	void Stop();
 private:
-
+	int music_bgm_hdl = 0;
 };
-
